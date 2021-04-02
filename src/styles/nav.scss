@@ -1,0 +1,33 @@
+.nav_bar_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $dark-red;
+  padding-bottom: 0.5rem;
+  position: relative;
+
+  .nav_link_active {
+    border-bottom: 4px solid black;
+  }
+
+  .nav_bar_left {
+    display: flex;
+
+    .logo {
+      color: $dark;
+      text-decoration: none;
+    }
+  }
+
+  .nav_bar_right {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    text-decoration: none;
+
+    .nav_link {
+      color: $dark;
+      text-decoration: none;
+    }
+  }
+}

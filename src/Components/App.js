@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 
+import "../styles/main.scss";
 import Naigavtion from "./Navigation/Navigation";
 import Landing from "./Pages/Landing";
 import Auth from "./Pages/Auth";
