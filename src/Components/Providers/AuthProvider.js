@@ -33,11 +33,26 @@ const AuthProvider = (props) => {
   // }, [history])
 
 
-  // const handleSuccessfulLogin = (res) => {
-    // setLoggedInStatus('LOGGED_IN')
-    // localStorage.setItem('playerId', res.data)
-  //   sessionStorage.setItem('logged-in', true)
-  //   history.push('/shopping-lists')
+  // const handleSuccessfulLogin = (username, password) => {
+  //   axios({
+  //     method: 'post',
+  //     url: `${API_URL}/login`,
+  //     data: {
+  //         username, 
+  //         password,
+  //     },
+  //     withCredentials: true,
+  //   })
+  //     .then(res => {
+  //       setLoggedInStatus('LOGGED_IN')
+  //       // localStorage.setItem('playerId', res.data)
+  //       sessionStorage.setItem('logged-in', true)
+  //       history.push('/shopping-lists')
+  //     })
+  //     .catch(err => {
+  //         console.log(err)
+  //         alert('Username Or Password Are Invaild')
+  //     })
   // }
 
   // const handleSuccessfulLogout = () => {
@@ -61,7 +76,6 @@ const AuthProvider = (props) => {
   //   setLoggedInStatus,
   //   handleSuccessfulLogout,
   //   handleSuccessfulLogin,
-  //   handleAccountDelete
   // }
 
   return (
