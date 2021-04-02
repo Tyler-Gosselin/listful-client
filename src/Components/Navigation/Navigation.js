@@ -11,13 +11,31 @@ const Naigavtion = () => {
           activeClassName="nav_link_active"
           className="logo"
         >
-          <h1>ListFull</h1>
+          <h1>ListFul</h1>
         </NavLink>
       </div>
       <div className="nav_bar_right">
-        <NavLink className="nav_link" activeClassName="nav_link_active" to="/account">Account</NavLink>
-        <NavLink className="nav_link" activeClassName="nav_link_active" to="/list_manage">Lists</NavLink>
-        <NavLink className="nav_link" activeClassName="nav_link_active" to="/auth">Login</NavLink>
+        <NavLink
+          className="nav_link"
+          activeClassName="nav_link_active"
+          to="/account"
+        >
+          Account
+        </NavLink>
+        <NavLink
+          className="nav_link"
+          activeClassName="nav_link_active"
+          to="/list_manage"
+        >
+          Lists
+        </NavLink>
+        <NavLink
+          className="nav_link"
+          activeClassName="nav_link_active"
+          to="/auth"
+        >
+          Login
+        </NavLink>
       </div>
     </div>
   );
