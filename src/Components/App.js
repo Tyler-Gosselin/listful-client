@@ -1,7 +1,10 @@
 import { Route, Switch } from "react-router-dom";
 
-import Landing from "./Pages/Landing";
 import Naigavtion from "./Navigation/Navigation";
+import Landing from "./Pages/Landing";
+import Auth from "./Pages/Auth";
+import Account from "./Pages/Account";
+import ListManage from "./Pages/ListManage";
 
 function App() {
   return (
@@ -9,6 +12,9 @@ function App() {
       <Naigavtion />
       <Switch>
         <Route exact path="/" component={Landing} />
+        <Route path="/auth" component={Auth} />
+        <Route path="/account" component={Account} />
+        <Route path="/list_manage" component={ListManage} />
       </Switch>
     </div>
   );
