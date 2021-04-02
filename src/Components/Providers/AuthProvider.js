@@ -70,6 +70,29 @@ const AuthProvider = (props) => {
   //     .catch(err => console.log(err))
   // }
 
+  // const handleSuccessSignUp = (username, password, email) => {
+  //   axios({
+  //     method: 'post',
+  //     url: `${API_URL}/create-user`,
+  //     data: {
+  //         username,
+  //         password,
+  //         email
+  //     },
+  //     withCredentials: true
+  //   })
+  //     .then(res => {
+  //       setLoggedInStatus('LOGGED_IN')
+  //       // localStorage.setItem('playerId', res.data)
+  //       sessionStorage.setItem('logged-in', true)
+  //       history.push('/shopping-lists')
+  //       console.log('submited with axios')
+  //     })
+  //     .catch(err => {
+  //         console.log(err)
+  //     })
+  // }
+
   // const state = {
   //   loggedInStatus,
   //   history,
