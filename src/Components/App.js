@@ -1,7 +1,21 @@
+import { Route, Switch } from "react-router-dom";
+
+import Naigavtion from "./Navigation/Navigation";
+import Landing from "./Pages/Landing";
+import Auth from "./Pages/Auth";
+import Account from "./Pages/Account";
+import ListManage from "./Pages/ListManage";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Naigavtion />
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route path="/auth" component={Auth} />
+        <Route path="/account" component={Account} />
+        <Route path="/list_manage" component={ListManage} />
+      </Switch>
     </div>
   );
 }
