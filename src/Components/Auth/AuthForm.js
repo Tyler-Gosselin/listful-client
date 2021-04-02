@@ -37,12 +37,12 @@ const AuthForm = () => {
     if (formToShow === "log-in") {
       setFormToShow("register");
     } else if (formToShow) {
-      setFormToShow("login");
+      setFormToShow("log-in");
     }
   };
 
   const formQuestionText = () => {
-    if (formToShow === "login") {
+    if (formToShow === "log-in") {
       return "Need an account? Register";
     } else {
       return "Already have an account? Login";
